@@ -27,7 +27,7 @@ ADMINS=Config.ADMINS
 @Client.on_message(filters.private & filters.incoming & ~filters.bot & ~filters.service & ~filters.me & ~filters.edited)
 async def reply(client, message): 
     try:
-        inline = await client.get_inline_bot_results(USERNAME, "SAF_ONE")
+        inline = await client.get_inline_bot_results(USERNAME, "MUSIC")
         await client.send_inline_bot_result(
             message.chat.id,
             query_id=inline.query_id,
